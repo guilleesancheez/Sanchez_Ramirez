@@ -120,6 +120,12 @@ listaAlumnos.set(i, alumno);
 escribirAlumnos(listaAlumnos);
 }
 
+public void mostrarTodos() {
+ArrayList<Alumno> listaAlumnos = leerAlumnos();
+for (Alumno a : listaAlumnos) System.out.println(a.getNombre() +
+" " + a.getApellidos() + " " + a.getCurso());
+}
+
 
 
 }
